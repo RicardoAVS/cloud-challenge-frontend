@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.html {
+  font-family: 'Righteous', cursive;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: rgb(93, 95, 97);
+  text-decoration: inherit;
+  border: none;
+}
+
+/* Personal Info*/
+
+.container {
+  justify-content: center;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  height: 343px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilePosition {
+  width: 250px;
+  height: 250px;
+  padding: 6px;
+  background: linear-gradient(
+    to bottom,
+    rgba(47, 80, 119, 1) 0%,
+    rgba(9, 63, 125, 1) 51%,
+    rgba(8, 77, 138, 1) 100%,
+    rgba(9, 58, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 50%;
+}
+
+.profileName {
+  font-size: 54px;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(21, 47, 77);
+  text-transform: uppercase;
+}
+
+.profession {
+  font-size: 32px;
+  text-transform: capitalize;
+  color: rgba(8, 77, 138, 1);
+  margin: 8px 0;
+}
+
+.summary {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Content Area*/
+.content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  margin: 100px 0;
+  font-weight: 300px;
+}
+
+.content p {
+  color: rgb(93, 95, 97);
+}
+
+.leftContent {
+  width: 40%;
+  text-align: end;
+}
+
+.rightContent {
+  width: 40%;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 10px 0 50px 0;
+  color: rgba(8, 77, 138, 1);
+}
+
+.role {
+  font-size: 36px;
+  font-weight: 900;
+  color: rgb(21, 47, 77);
+}
+
+.company {
+  font-size: 17px;
+  color: rgba(47, 80, 119, 1);
+}
+
+.date {
+  font-size: 14px;
+  color: slategrey;
+}
+
+.description {
+  margin: 20px 0;
+}
+
+.divider {
+  width: 8px;
+  height: auto;
+  margin: 0 50px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to bottom,
+    rgba(9, 58, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(8, 77, 138, 1) 100%,
+    rgba(9, 63, 125, 1) 51%,
+    rgba(47, 80, 119, 1) 0%
+  );
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.skillName {
+  margin: 5px 0;
+  font-weight: 300;
+  color: slategrey;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.skillBar {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(135, 148, 163, 0.322);
+}
+
+.skillBarCompleted {
+  height: 8px;
+  background-color: rgb(21, 47, 77);
+  float: right;
+}
+
+/*Contact Icons*/
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  justify-content: space-around;
+}
+
+.contactIcon {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.contactIcon a,
+.contactIcon p {
+  font-size: 1.3rem;
+  margin: 0.6em;
+}
+
+.fab {
+  color: #292927;
+  font-size: 15px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background: #292927;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.viewTitle p {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0.7em 0 0 0;
+}
+
+.clickContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.countBox {
+  border: 1px solid beige;
+  width: 3%;
+  height: 0.4%;
+  font-size: 2.7em;
+  text-align: center;
+  border-radius: 7%;
+  margin: 1em 0.02em;
+}
+
+.countBox > * {
+  margin: 0.4em 0;
+}
