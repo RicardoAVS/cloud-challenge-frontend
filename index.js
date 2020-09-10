@@ -3,24 +3,18 @@ window.onload = () => {
     let url = 'https://zweaywp9rg.execute-api.us-east-1.amazonaws.com/Prod';
     try {
       const response = await fetch(`${url}/visitors`, {
-        method: 'POST',
-        mode: 'cors',
-        isBase64Encoded: false,
-        headers: {
+        "method": 'POST',
+        "mode": 'cors',
+        "isBase64Encoded": false,
+        "headers": {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
+        "body": JSON.stringify({
           Website: webpage,
         }),
       });
-
-      console.log(response);
-      if (!response.ok) console.log(response);
-      // check if response worked (no 404 errors etc...)
-      throw new Error(response.statusText);
-
-      console.log(response.json());
       return response.json(); // get JSON from the response
+
     } catch (error) {
       return error;
     }
@@ -28,13 +22,19 @@ window.onload = () => {
 
   getJSON('Cloud Challenge')
     .then((data) => {
-      let count = String(data.count);
-      let countList = count.split('');
-      document.getElementById('hundred').innerText =
-        countList[2] > 0 ? countList[1] : 0;
-      document.getElementById('tenth').innerText =
-        countList[1] > 0 ? countList[1] : 0;
-      document.getElementById('ones').innerText = countList[0];
+
+        let count = String(data.count);
+        let countList = count.split('');
+
+        let hundred = (countList[0] === undefined) ? 0 : (countList[0] > 0) ? countList[0] : 0;
+        let tenth = (countList[1] === undefined) ? 0 : (countList[1] > 0) ? countList[1] : 0;
+        let ones = countList[2]
+
+        // Show each digit from count in the corresponding box
+        document.getElementById('hundred').innerText = hundred;
+        document.getElementById('tenth').innerText = tenth
+        document.getElementById('ones').innerText = ones;
+
     })
     .catch((error) => {
       console.error(error);
