@@ -164,6 +164,9 @@ a {
   float: right;
 }
 
+#proyect-status > * {
+  margin: 2px 0;
+}
 /*Contact Icons*/
 
 .contactContainer {
