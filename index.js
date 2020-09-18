@@ -1,6 +1,6 @@
 window.onload = () => {
   const getJSON = async (webpage) => {
-    let url = 'https://sr8rnh4txe.execute-api.us-east-1.amazonaws.com/Prod';
+    let url = ' https://gz1ost5v1h.execute-api.us-east-1.amazonaws.com/Prod';
     try {
       const response = await fetch(`${url}/visitors`, {
         method: 'POST',
