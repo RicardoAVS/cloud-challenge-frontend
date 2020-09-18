@@ -14,4 +14,4 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
       - name: Update Static S3 bucket 
-        run: aws s3 sync ./src s3://software-student.me
+        run: aws s3 sync . s3://software-student.me --delete
