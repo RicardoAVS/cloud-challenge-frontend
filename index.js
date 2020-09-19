@@ -21,7 +21,6 @@ window.onload = () => {
 
   getJSON('Cloud Challenge')
     .then((data) => {
-      debugger;
       // Split each digit individually
       let count = String(data.count);
       let countList = count.split('').reverse();
