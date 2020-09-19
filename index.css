@@ -79,7 +79,7 @@ a {
   height: 100%;
   width: 100%;
   justify-content: center;
-  margin: 100px 0;
+  margin-bottom: 1em;
   font-weight: 300px;
 }
 
@@ -172,7 +172,7 @@ a {
 .contactContainer {
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 25%;
   justify-content: space-around;
 }
 
