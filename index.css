@@ -1,11 +1,7 @@
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.html {
-  font-family: 'Righteous', cursive;
-  font-weight: 500;
 }
 
 ul {
