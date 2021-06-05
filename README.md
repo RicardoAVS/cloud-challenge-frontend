@@ -1,1 +1,1 @@
-This is a repo based on **The Cloud Resume Challenge**, all Frontend code will be stored here. To get the source code for the backend go to [cloud-challenge-backend](https://github.com/RicardoAVS/cloud-challenge-backend)
+This is a repo based on **The Cloud Resume Challenge**, all Frontend code will be stored here. To get the source code for the backend go to [cloud-challenge-backend](https://github.com/RicardoAVS/cloud-challenge-backend).
